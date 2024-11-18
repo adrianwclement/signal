@@ -1,7 +1,7 @@
 import { useSession, signIn, signOut } from "next-auth/react";
 import { type FormEvent, useState, ChangeEvent } from "react";
 
-export const AddIdiom = () => {
+const AddIdiom = () => {
   const { data: session, status } = useSession();
   const [phrase, setPhrase] = useState("");
   const [message, setMessage] = useState("");
@@ -64,3 +64,5 @@ export const AddIdiom = () => {
     </div>
   );
 };
+
+export default AddIdiom;
